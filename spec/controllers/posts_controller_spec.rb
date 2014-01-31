@@ -36,6 +36,7 @@ describe PostsController do
 
   describe "GET index" do
     it "assigns all posts as @posts" do
+      assert false
       post = Post.create! valid_attributes
       get :index, {}, valid_session
       assigns(:posts).should eq([post])
