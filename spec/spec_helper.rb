@@ -35,4 +35,10 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+ 
+  # config from Ilya
+  config.include Capybara::DSL
+  config.include Rails.application.routes.url_helpers
+  Capybara.ignore_hidden_elements = true
+  Capybara.default_driver = Capybara.javascript_driver = :webkit
 end

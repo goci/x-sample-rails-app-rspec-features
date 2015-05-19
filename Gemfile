@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.99.0'
   gem 'capybara'
+  gem 'capybara-webkit'
 end
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.21'
 
 gem 'sqlite3'
 
