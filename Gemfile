@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 group :development, :test do
   gem 'rspec-rails', '2.99.0'
   gem 'capybara'
-  gem 'capybara-webkit'
+  gem 'capybara-webkit', '1.5.0'
 end
 
 gem 'rails', '3.2.21'
