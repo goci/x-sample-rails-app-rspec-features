@@ -35,8 +35,13 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
- 
+
   # config from Ilya
+  config.mock_with :rspec
+  config.mock_framework = :rspec
+  config.infer_spec_type_from_file_location!
+  config.treat_symbols_as_metadata_keys_with_true_values = true
+
   config.include Capybara::DSL
   config.include Rails.application.routes.url_helpers
   Capybara.ignore_hidden_elements = true
